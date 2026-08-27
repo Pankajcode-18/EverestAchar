@@ -1,0 +1,19 @@
+{
+  "name": "everest-nepali-achar",
+  "version": "1.0.0",
+  "description": "Everest Nepali Achar - Smart Online Pickle Ordering Website",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "seed": "npm run seed --prefix server",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": ["nepali-achar", "mern", "typescript", "gemini-ai", "pickle-ecommerce"],
+  "author": "Sunita Kathayat & Tilak Sijapati",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
